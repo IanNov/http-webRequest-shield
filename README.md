@@ -1,2 +1,2 @@
 # http-webRequest-shield
-Extension of JavaScript Restrictor for analyzing and blocking HTTP requests.
+Standalone version of extension of JavaScript Restrictor for analyzing and blocking HTTP requests.
