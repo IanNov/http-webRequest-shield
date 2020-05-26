@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "HTTP Request Shield",
+  "version": "1.0",
+
+  "description": "Standalone version of HTTP requst shield is focused on capturing and blocking malicious HTTP requests.",
+
+  "icons": {
+      "16": "img/icon-16.png",
+      "32": "img/icon-32.png",
+      "48": "img/icon-48.png",
+      "64": "img/icon-64.png",
+      "96": "img/icon-96.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "img/icon-16.png",
+      "32": "img/icon-32.png",
+      "48": "img/icon-48.png",
+      "64": "img/icon-64.png",
+      "96": "img/icon-96.png",
+      "128": "img/icon-128.png",
+      "256": "img/icon-256.png",
+      "512": "img/icon-512.png"
+    },
+    "default_title": "HTTP Request Shield",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+      "scripts": ["http_shield_common.js","http_shield_chrome.js", "url.js"]
+  },
+
+  "options_ui": {
+  "page": "options.html",
+  "open_in_tab": true
+  },
+  
+  "permissions": ["tabs", "storage", "webRequest", "webRequestBlocking", "proxy", "<all_urls>", "notifications"]
+
+}
